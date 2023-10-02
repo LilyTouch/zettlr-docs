@@ -142,16 +142,10 @@ If you have a large screen, you may find that lines of your text are very long.
 If you wish to have shorter lines in the editor, with margins on both sides, you can use the following CSS snippet:
 
 ```css
-#editor {
-  --side-margin: calc( 50vw - 30em ); 
-}
-
-#editor .CodeMirror {
-  margin-left: var(--side-margin);
-}
-
-#editor .CodeMirror-scroll {
-  padding-right: var(--side-margin);
+.main-editor-wrapper .cm-editor .cm-scroller {
+    --side-margin: calc( 50vw - 30em );
+    margin-left: var(--side-margin);
+    padding-right: var(--side-margin);
 }
 ```
 
@@ -160,16 +154,8 @@ If you wish to have shorter lines in the editor, with margins on both sides, you
 For the distraction free mode, the CSS snippet needs to be modified as follows:
 
 ```css
-#editor.fullscreen {
-  --side-margin-fullscreen: calc( 50vw - 30em ); 
-}
-  
-#editor.fullscreen .CodeMirror-fullscreen {
-  margin-left: var(--side-margin-fullscreen) !important;
-}
-    
-#editor.fullscreen .CodeMirror-fullscreen .CodeMirror-scroll { 
-  padding-right: var(--side-margin-fullscreen) !important; 
+.main-editor-wrapper.fullscreen .cm-scroller {
+    padding: 0 12vw; 
 }
 ```
 
