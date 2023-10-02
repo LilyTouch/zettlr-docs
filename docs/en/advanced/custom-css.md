@@ -192,4 +192,16 @@ body .main-editor-wrapper .cm-editor .cm-emphasis {
 }
 ```
 
+### Color of **Strong** Element
+
+To change the color of strong element:
+
+```css
+.cm-editor .cm-strong {
+    font-weight: bold;
+    color: #ff8000 !important; /*Orange*/
+}
+```
+
+
 
