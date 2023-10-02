@@ -178,16 +178,18 @@ In dark mode, it may be necessary to modify the contrast to avoid the halo effec
 body.dark .main-editor-wrapper {
     background-color: #333333;
 }
+```
 
 
 ### Color of _Emphasis_ Element
 
 To change the color of emphasis element:
 
+```css
 body .main-editor-wrapper .cm-editor .cm-emphasis {
     font-style: italic;
     color: #0080ff; /*Blue*/
 }
-
-
 ```
+
+
