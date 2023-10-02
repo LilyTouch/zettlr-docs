@@ -215,7 +215,7 @@ To change the color of strikethrough element:
 ```
 
 
-### Background Color of ==Mark==*/
+### Background Color of ==Mark==
 
 To change background color of mark element.
 
@@ -226,7 +226,7 @@ To change background color of mark element.
 ```
 
 
-### Color and Font of <!--Comment-->
+### Color and Font of `<!--Comment-->`
 
 To change background color of the comment. If your font for normal text is serif, it could be coherent to choose same font for comment.
 
@@ -237,6 +237,17 @@ body .main-editor-wrapper .cm-editor .cm-comment:not(.cm-formatting):not(.cm-fen
 
 body .main-editor-wrapper .cm-editor .cm-comment {
     font-family: /*<your-font-name here>*/, /*<placeholder>*/, serif;
+}
+```
+
+
+### Color of `[Link](adress)`
+
+To obtain a different color for links than the one defined by the theme.
+
+```css
+body .main-editor-wrapper .cm-editor a.markdown-link, body .main-editor-wrapper .cm-editor .cm-link {
+    color: red;
 }
 ```
 
