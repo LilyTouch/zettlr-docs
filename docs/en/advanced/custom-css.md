@@ -159,4 +159,25 @@ For the distraction free mode, the CSS snippet needs to be modified as follows:
 }
 ```
 
-By adjusting the calc functions for the two different modes, the same line width can be achieved with and without the file manager/sidebar. 
+By adjusting the calc functions for the two different modes, the same line width can be achieved with and without the file manager/sidebar.
+
+
+### Change background color
+
+If you want change the background color of the chosen theme you can apply the following code.
+
+```css
+body .main-editor-wrapper {
+    background-color: #f9f1e9;
+}
+```
+
+In dark mode, it may be necessary to modify the contrast to avoid the halo effect.
+
+```css
+body.dark .main-editor-wrapper {
+    background-color: #333333;
+}
+
+
+```
