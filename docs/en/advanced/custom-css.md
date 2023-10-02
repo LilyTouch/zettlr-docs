@@ -241,3 +241,15 @@ body .main-editor-wrapper .cm-editor .cm-comment {
 ```
 
 
+### Using a Custom Font for Code Block and YAML frontmatter*/
+
+If you use a serif font and you want to keep monospace font in code block, you can apply the following CSS. Remark, YAML frontmatter use the same CSS name.
+
+```css
+body .main-editor-wrapper .cm-editor .code-block-line {
+    font-family: /*<your-font-name here>*/ 'Fira Code', /*<placeholder>*/ Consolas, 'Inconsolata', Menlo, monospace
+    font-size: 16px !important; /*Option to balance size in relation to normal text.*/
+}
+```
+
+
