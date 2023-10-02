@@ -55,8 +55,8 @@ In case you do not like the default font delivered with Zettlr, or need to chang
 The placeholder will make sure that even if your font cannot be found, an equivalent font will be used. It serves as a fallback. Also, if your font name contains spaces, make sure to surround it with quotation marks, e.g., `"Times New Roman"`.
 
 ```css
-body .main-editor-wrapper .cm-editor{
-    font-family: '<your-font-name here>', <placeholder>;
+body .main-editor-wrapper .cm-editor .cm-scroller {
+    font-family: '<your-font-name here>', <placeholder> !important;
 }
 ```
 ### Custom Background Images
