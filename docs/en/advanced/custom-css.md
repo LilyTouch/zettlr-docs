@@ -215,6 +215,17 @@ To change the color of strikethrough element:
 ```
 
 
+### Background Color of ==Mark==*/
+
+To change background color of mark element.
+
+```css
+.cm-editor .cm-highlight {
+    background-color: #de8be7; /*#ffff0080 default value*/
+}
+```
+
+
 ### Color and Font of <!--Comment-->
 
 To change background color of the comment. If your font for normal text is serif, it could be coherent to choose same font for comment.
