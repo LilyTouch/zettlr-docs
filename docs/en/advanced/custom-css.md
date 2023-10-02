@@ -215,3 +215,18 @@ To change the color of strikethrough element:
 ```
 
 
+### Color and Font of <!--Comment-->
+
+To change background color of the comment. If your font for normal text is serif, it could be coherent to choose same font for comment.
+
+```css
+body .main-editor-wrapper .cm-editor .cm-comment:not(.cm-formatting):not(.cm-fenced-code) {
+    background-color: #abe7f4; /*#f0f0f099 default value*/
+}
+
+body .main-editor-wrapper .cm-editor .cm-comment {
+    font-family: /*<your-font-name here>*/, /*<placeholder>*/, serif;
+}
+```
+
+
