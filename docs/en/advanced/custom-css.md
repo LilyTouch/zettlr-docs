@@ -204,4 +204,14 @@ To change the color of strong element:
 ```
 
 
+### Color of ~~Strikethrough~~ Element
+
+To change the color of strikethrough element:
+
+```css
+.cm-editor .cm-strikethrough {
+    color: grey !important;
+}
+```
+
 
