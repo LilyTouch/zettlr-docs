@@ -180,4 +180,14 @@ body.dark .main-editor-wrapper {
 }
 
 
+### Color of _Emphasis_ Element
+
+To change the color of emphasis element:
+
+body .main-editor-wrapper .cm-editor .cm-emphasis {
+    font-style: italic;
+    color: #0080ff; /*Blue*/
+}
+
+
 ```
