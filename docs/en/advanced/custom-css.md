@@ -241,7 +241,7 @@ body .main-editor-wrapper .cm-editor .cm-comment {
 ```
 
 
-### Using a Custom Font for Code Block and YAML frontmatter*/
+### Using a Custom Font for Code Block and YAML frontmatter
 
 If you use a serif font and you want to keep monospace font in code block, you can apply the following CSS. Remark, YAML frontmatter use the same CSS name.
 
@@ -252,4 +252,16 @@ body .main-editor-wrapper .cm-editor .code-block-line {
 }
 ```
 
+
+### Formating > Quote Block
+
+To change the formating of the quote block to get better style.
+
+.cm-line:has(.cm-quote.cm-content-span.cm-content-span)  {
+    display: block; /* Make the span a block element */
+    background-color: #d6e3e4;
+    font-size: smaller;
+    letter-spacing: 1px;
+    border-left: 5px solid #00e3e4;
+}
 
