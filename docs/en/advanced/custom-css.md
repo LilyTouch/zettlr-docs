@@ -59,6 +59,7 @@ body .main-editor-wrapper .cm-editor .cm-scroller {
     font-family: '<your-font-name here>', <placeholder> !important;
 }
 ```
+
 ### Custom Background Images
 
 With the following code, you can make your editor have a different background image everytime you start it. The images are taken from Unsplash.com, a nice site with free photos. It uses the `Source API`, which will simply spit out a different image every time the URL is visited. You can test it out by simply [visiting the page and refreshing a few times](https://source.unsplash.com/random)! Please refer to the [Unsplash Source API reference](https://source.unsplash.com/) for more options (such as using an image of the day).
@@ -98,7 +99,7 @@ body.dark .main-editor-wrapper .cm-editor .cm-content{
 In case you want to see where your linefeeds are, you can display the pilcrow symbol (¶) at the end of your lines by using the following Custom CSS:
 
 ```css
-.cm-line:not(:last-child)::after {
+.cm-line::after, br {
   content: "¶";
   color: #666;
 }
