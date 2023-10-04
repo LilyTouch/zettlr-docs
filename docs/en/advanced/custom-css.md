@@ -12,8 +12,9 @@ It is possible to use custom CSS ([Cascading Style Sheets](https://en.wikipedia.
 
 If you are unfamiliar with CSS, but don't want to simply copy & paste the guides on this page, you may choose to follow a short [tutorial on CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS). There are many on the internet, so a quick Google search can also provide you with video tutorials, if you prefer those.
 
+## How to make a custom CSS?
 
-## Writing CSS for Zettlr
+### Writing CSS for Zettlr
 
 The styles of Zettlr are divided into both geometry and the actual theme, so you may want to stick with only changing the design of elements _without_ changing **any** geometry. Playing around with the geometry may be fun, but it may yield completely random behaviour, as some parts of the app depend upon the correct sizes of elements. In case you made a mistake, don't worry: Simply remove the `custom.css` file from the data directory of Zettlr. You can find the data directory of your own system by looking at the paths provided in [the setup guide](../getting-started/setup.md).
 
@@ -22,7 +23,7 @@ Classes and IDs in Zettlr are always namespaced to the respective components (un
 Everything is always namespaced to the `body`, which has a class `.dark` if the app is currently in dark mode. So to make sure a certain rule only applies while the app is in dark mode, make sure to prefix it with `body.dark`!
 
 
-## Tips for finding selectors
+### Tips for finding selectors
 
 Zettlr's styles are subject to constant changes. While they should remain fairly stable, changes can be introduced in any version, and therefore, instead of providing you with ready-made examples, this page covers how you can find the correct selectors easily.
 
@@ -44,10 +45,13 @@ body .cm-quote, body .cm-link, body .cm-strong, body .cm-em {
 
 This is the selector you want to copy over to your custom CSS dialog and style to your liking. As you can see, it gives blockquotes, links, bold and italic text the primary color of the theme.
 
+__________________________________________________
 
 ## CSS Code Snippets
 
-### Using a Custom Font with Zettlr
+### Global formatting
+
+#### Using a Custom Font with Zettlr
 
 In case you do not like the default font delivered with Zettlr, or need to change it, simply paste the following code snippet into the custom CSS editor. Replace `your-font-name` with the **full name** of the font you want to use for Zettlr. Please replace `placeholder` according to the font:
 
@@ -63,7 +67,7 @@ body .main-editor-wrapper .cm-editor .cm-scroller {
 }
 ```
 
-### Custom Background Images
+#### Custom Background Images
 
 With the following code, you can make your editor have a different background image everytime you start it. The images are taken from Unsplash.com, a nice site with free photos. It uses the `Source API`, which will simply spit out a different image every time the URL is visited. You can test it out by simply [visiting the page and refreshing a few times](https://source.unsplash.com/random)! Please refer to the [Unsplash Source API reference](https://source.unsplash.com/) for more options (such as using an image of the day).
 
@@ -98,7 +102,7 @@ body.dark .main-editor-wrapper .cm-editor .cm-content{
 ![A preview of a Zettlr installation using above snippet](../img/custom_css_unsplash_dark.png)
 
 
-### Visualising Line Endings
+#### Visualising Line Endings
 
 In case you want to see where your linefeeds are, you can display the pilcrow symbol (¶) at the end of your lines by using the following Custom CSS:
 
@@ -112,7 +116,7 @@ In case you want to see where your linefeeds are, you can display the pilcrow sy
 ![A preview of Zettlr using above snippet](../img/custom_css_pilcrow.png)
 
 
-### Change the Active Line Styling in Typewriter Mode
+#### Change the Active Line Styling in Typewriter Mode
 
 You can change the styling of the active line in Typewriter mode. Replace `top-border-hex-code`, `bottom-border-hex-code` and `background-hex-code` in the CSS snippets below with your preferred Hex colour codes, which you can choose from a website such as [HTML Color Codes](https://htmlcolorcodes.com/). You may want to have different colour styling for light and dark mode.
 
@@ -141,7 +145,7 @@ body.dark .main-editor-wrapper .cm-editor .cm-content .typewriter-active-line {
     The example CSS Code Snippets above have been updated and tested with v3.0.1 and so should work with newer versions of Zettlr, but the ones below haven't been updated in some time, and are unlikely to work out of the box.
 
 
-### Set a maximum width for the text
+#### Set a maximum width for the text
 
 If you have a large screen, you may find that lines of your text are very long.
 If you wish to have shorter lines in the editor, with margins on both sides, you can use the following CSS snippet:
@@ -167,7 +171,7 @@ For the distraction free mode, the CSS snippet needs to be modified as follows:
 By adjusting the calc functions for the two different modes, the same line width can be achieved with and without the file manager/sidebar.
 
 
-### Change background color
+#### Change background color
 
 If you want change the background color of the chosen theme you can apply the following code.
 
@@ -186,7 +190,7 @@ body.dark .main-editor-wrapper {
 ```
 
 
-### Change the theme color
+#### Change the theme color
 
 It is possible to change the color of theme with following code :
 
@@ -206,7 +210,9 @@ It is possible to change the color of theme with following code :
     Check also the effect of your modification in dark mode.
 
 
-### Color of _Emphasis_ Element
+### Inline Formatting
+
+#### Color of _Emphasis_ Element
 
 To change the color of emphasis element:
 
@@ -217,7 +223,7 @@ body .main-editor-wrapper .cm-editor .cm-emphasis {
 }
 ```
 
-### Color of **Strong** Element
+#### Color of **Strong** Element
 
 To change the color of strong element:
 
@@ -231,7 +237,7 @@ To change the color of strong element:
 ```
 
 
-### Color of ~~Strikethrough~~ Element
+#### Color of ~~Strikethrough~~ Element
 
 To change the color of strikethrough element:
 
@@ -242,7 +248,7 @@ To change the color of strikethrough element:
 ```
 
 
-### Background Color of ==Mark==
+#### Background Color of ==Mark==
 
 To change background color of mark element.
 
@@ -253,7 +259,7 @@ To change background color of mark element.
 ```
 
 
-### Color and Font of `<!--Comment-->`
+#### Color and Font of `<!--Comment-->`
 
 To change background color of the comment. If your font for normal text is serif, it could be coherent to choose same font for comment.
 
@@ -268,7 +274,7 @@ body .main-editor-wrapper .cm-editor .cm-comment {
 ```
 
 
-### Color of `[Link](adress)`
+#### Color of `[Link](adress)`
 
 To obtain a different color for links than the one defined by the theme. With `hover`, when the mouse is on the link text, this text changes color. With `:active`, when you push on the link text, this text changes color.
 
@@ -286,8 +292,9 @@ body .main-editor-wrapper .cm-editor a.markdown-link:active, body .main-editor-w
 }
 ```
 
+### Block Formatting
 
-### Using a Custom Font for Code Block and YAML frontmatter
+#### Using a Custom Font for Code Block and YAML frontmatter
 
 If you use a serif font and you want to keep monospace font in code block, you can apply the following CSS. Remark, YAML frontmatter use the same CSS name.
 
@@ -299,9 +306,9 @@ body .main-editor-wrapper .cm-editor .code-block-line {
 ```
 
 
-### Formating > Quote Block
+#### Formatting > Quote Block
 
-To change the formating of the quote block to get better style.
+To change the formatting of the quote block to get better style.
 
 .cm-line:has(.cm-quote.cm-content-span.cm-content-span)  {
     display: block; /* Make the span a block element */
