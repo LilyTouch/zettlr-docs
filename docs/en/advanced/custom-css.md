@@ -12,6 +12,7 @@ It is possible to use custom CSS ([Cascading Style Sheets](https://en.wikipedia.
 
 If you are unfamiliar with CSS, but don't want to simply copy & paste the guides on this page, you may choose to follow a short [tutorial on CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS). There are many on the internet, so a quick Google search can also provide you with video tutorials, if you prefer those.
 
+
 ## Writing CSS for Zettlr
 
 The styles of Zettlr are divided into both geometry and the actual theme, so you may want to stick with only changing the design of elements _without_ changing **any** geometry. Playing around with the geometry may be fun, but it may yield completely random behaviour, as some parts of the app depend upon the correct sizes of elements. In case you made a mistake, don't worry: Simply remove the `custom.css` file from the data directory of Zettlr. You can find the data directory of your own system by looking at the paths provided in [the setup guide](../getting-started/setup.md).
@@ -19,6 +20,7 @@ The styles of Zettlr are divided into both geometry and the actual theme, so you
 Classes and IDs in Zettlr are always namespaced to the respective components (unless they're global), so to really override a rule you will have to use the complete namespace (you can also use the `!important` override rule, but this is widely regarded as bad practice).
 
 Everything is always namespaced to the `body`, which has a class `.dark` if the app is currently in dark mode. So to make sure a certain rule only applies while the app is in dark mode, make sure to prefix it with `body.dark`!
+
 
 ## Tips for finding selectors
 
@@ -41,6 +43,7 @@ body .cm-quote, body .cm-link, body .cm-strong, body .cm-em {
 ```
 
 This is the selector you want to copy over to your custom CSS dialog and style to your liking. As you can see, it gives blockquotes, links, bold and italic text the primary color of the theme.
+
 
 ## CSS Code Snippets
 
@@ -94,6 +97,7 @@ body.dark .main-editor-wrapper .cm-editor .cm-content{
 *Dark Mode*
 ![A preview of a Zettlr installation using above snippet](../img/custom_css_unsplash_dark.png)
 
+
 ### Visualising Line Endings
 
 In case you want to see where your linefeeds are, you can display the pilcrow symbol (¶) at the end of your lines by using the following Custom CSS:
@@ -106,6 +110,7 @@ In case you want to see where your linefeeds are, you can display the pilcrow sy
 ```
 
 ![A preview of Zettlr using above snippet](../img/custom_css_pilcrow.png)
+
 
 ### Change the Active Line Styling in Typewriter Mode
 
@@ -243,11 +248,19 @@ body .main-editor-wrapper .cm-editor .cm-comment {
 
 ### Color of `[Link](adress)`
 
-To obtain a different color for links than the one defined by the theme.
+To obtain a different color for links than the one defined by the theme. With `hover`, when the mouse is on the link text, this text changes color. With `:active`, when you push on the link text, this text changes color.
 
 ```css
 body .main-editor-wrapper .cm-editor a.markdown-link, body .main-editor-wrapper .cm-editor .cm-link {
     color: red;
+}
+
+body .main-editor-wrapper .cm-editor a.markdown-link:hover, body .main-editor-wrapper .cm-editor .cm-link:hover {
+    color: pink;
+}
+
+body .main-editor-wrapper .cm-editor a.markdown-link:active, body .main-editor-wrapper .cm-editor .cm-link:active {
+    color: purple;
 }
 ```
 
