@@ -310,7 +310,7 @@ body .main-editor-wrapper .cm-editor .code-block-line {
 
 To change the formatting of the quote block to get better style.
 
-.cm-line:has(.cm-quote.cm-content-span.cm-content-span)  {
+.cm-line:has(.cm-quote.cm-content-span)  {
     display: block; /* Make the span a block element */
     background-color: #e6f7f5;
     border-left: 5px solid #00e3e4;
