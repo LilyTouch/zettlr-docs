@@ -186,6 +186,26 @@ body.dark .main-editor-wrapper {
 ```
 
 
+### Change the theme color
+
+It is possible to change the color of theme with following code :
+
+:root {
+    --c-primary: #2A82AA; /*default value = var(--grey-0)*/
+    --c-primary-contrast: white;
+    --selection-light: #88D4F7; /*default value = var(--green-selection*/
+    --selection-dark: #3EC0F7; /*default value = var(--green-selection-dark)*/
+}
+
+!!! warning
+
+    Changing theme colors can be tricky. Indeed, if the colors are poorly chosen, poor contrasts can result. You can use a color wheel to harmonize colors. There are many tools available for this purpose. [Adobe's free color wheel](https://color.adobe.com/create/color-wheel) is a good one.
+
+!!! warning
+
+    Check also the effect of your modification in dark mode.
+
+
 ### Color of _Emphasis_ Element
 
 To change the color of emphasis element:
