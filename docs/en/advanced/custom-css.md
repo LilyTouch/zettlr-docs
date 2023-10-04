@@ -49,6 +49,11 @@ __________________________________________________
 
 ## CSS Code Snippets
 
+!!! warning
+
+    The example CSS Code Snippets below have been updated and tested with v3.0.1 and so should work with newer versions of Zettlr, but this codes can’t works on V2.
+
+
 ### Global formatting
 
 #### Using a Custom Font with Zettlr
@@ -139,10 +144,6 @@ body.dark .main-editor-wrapper .cm-editor .cm-content .typewriter-active-line {
   background-color: <background-hex-code>;
 }
 ```
-
-!!! warning
-
-    The example CSS Code Snippets above have been updated and tested with v3.0.1 and so should work with newer versions of Zettlr, but the ones below haven't been updated in some time, and are unlikely to work out of the box.
 
 
 #### Set a maximum width for the text
