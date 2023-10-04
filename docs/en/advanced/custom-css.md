@@ -203,8 +203,10 @@ To change the color of strong element:
 
 ```css
 .cm-editor .cm-strong {
-    font-weight: bold;
     color: #ff8000 !important; /*Orange*/
+    font-weight: bold;
+    /*font-weight: normal; other option*/
+    /*text-decoration: underline; other option*/
 }
 ```
 
