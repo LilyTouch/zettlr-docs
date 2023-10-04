@@ -283,9 +283,9 @@ To change the formating of the quote block to get better style.
 
 .cm-line:has(.cm-quote.cm-content-span.cm-content-span)  {
     display: block; /* Make the span a block element */
-    background-color: #d6e3e4;
-    font-size: smaller;
-    letter-spacing: 1px;
+    background-color: #e6f7f5;
     border-left: 5px solid #00e3e4;
+    /*font-size: smaller; option*/
+    /*letter-spacing: 1px; option*/
 }
 
