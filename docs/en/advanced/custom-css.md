@@ -66,9 +66,12 @@ In case you do not like the default font delivered with Zettlr, or need to chang
 
 The placeholder will make sure that even if your font cannot be found, an equivalent font will be used. It serves as a fallback. Also, if your font name contains spaces, make sure to surround it with quotation marks, e.g., `"Times New Roman"`.
 
+You can also to change color in relation to your theme or background. To do that, remove `/*` and `*/` (syntaxe of comment in CSS) and change le value after `#`. RGB value is use here.
+
 ```css
 body .main-editor-wrapper .cm-editor .cm-scroller {
     font-family: '<your-font-name here>', <placeholder> !important;
+    /*color: #492a00; Other option, default value = var(--grey-5)*/
 }
 ```
 
