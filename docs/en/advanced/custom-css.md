@@ -185,11 +185,12 @@ body .main-editor-wrapper {
 }
 ```
 
-In dark mode, it may be necessary to modify the contrast to avoid the halo effect.
+In dark mode, it may be necessary to modify the contrast to avoid the halo effect due to retinal persistence of the eye. To improve that, tune the color of background in relation to the color of font.
 
 ```css
-body.dark .main-editor-wrapper {
-    background-color: #333333;
+body.dark .main-editor-wrapper .cm-scroller {
+    background-color: #333333; /*#14141e; default value*/
+    /*color: #e3d3be; other option, default value = var(--grey-0)*/
 }
 ```
 
