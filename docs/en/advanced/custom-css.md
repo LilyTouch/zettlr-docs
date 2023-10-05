@@ -56,7 +56,7 @@ __________________________________________________
     The example CSS Code Snippets below have been updated and tested with v3.0.1 and so should work with newer versions of Zettlr, but this codes can’t works on V2.
 
 
-### Global formatting
+### Global Formatting
 
 #### Using a Custom Font with Zettlr
 
@@ -68,7 +68,7 @@ In case you do not like the default font delivered with Zettlr, or need to chang
 
 The placeholder will make sure that even if your font cannot be found, an equivalent font will be used. It serves as a fallback. Also, if your font name contains spaces, make sure to surround it with quotation marks, e.g., `"Times New Roman"`.
 
-You can also to change color in relation to your theme or background. To do that, remove `/*` and `*/` (syntaxe of comment in CSS) and change le value after `#`. RGB value is use here.
+You can also to change color in relation to your theme or background. To do that, remove `/*` and `*/` (syntaxe of comment in CSS) and change the value after `#`. RGB value is use here.
 
 ```css
 body .main-editor-wrapper .cm-editor .cm-scroller {
