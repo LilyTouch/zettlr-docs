@@ -12,6 +12,7 @@ It is possible to use custom CSS ([Cascading Style Sheets](https://en.wikipedia.
 
 If you are unfamiliar with CSS, but don't want to simply copy & paste the guides on this page, you may choose to follow a short [tutorial on CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS). There are many on the internet, so a quick Google search can also provide you with video tutorials, if you prefer those.
 
+
 ## How to make a custom CSS?
 
 ### Writing CSS for Zettlr
@@ -45,6 +46,7 @@ body .cm-quote, body .cm-link, body .cm-strong, body .cm-em {
 
 This is the selector you want to copy over to your custom CSS dialog and style to your liking. As you can see, it gives blockquotes, links, bold and italic text the primary color of the theme.
 
+
 __________________________________________________
 
 ## CSS Code Snippets
@@ -74,6 +76,7 @@ body .main-editor-wrapper .cm-editor .cm-scroller {
     /*color: #492a00; Other option, default value = var(--grey-5)*/
 }
 ```
+
 
 #### Custom Background Images
 
@@ -228,6 +231,7 @@ body .main-editor-wrapper .cm-editor .cm-emphasis {
 }
 ```
 
+
 #### Color of **Strong** Element
 
 To change the color of strong element:
@@ -296,6 +300,7 @@ body .main-editor-wrapper .cm-editor a.markdown-link:active, body .main-editor-w
     color: purple;
 }
 ```
+
 
 ### Block Formatting
 
