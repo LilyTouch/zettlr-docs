@@ -311,6 +311,21 @@ body .main-editor-wrapper .cm-editor .code-block-line {
 ```
 
 
+#### Change the Name of the Frontmatter
+
+If you use the YAML frontmatter, it is possible to change the name after first `---`. For example, you can replace “YAML Frontmatter” by “Metadata” or a transtation in your language. To do that, change the texte after `content:` between the both `"`. You can see some examples of translation below.
+
+```css
+body .main-editor-wrapper .cm-editor .cm-yaml-frontmatter-start::after {
+    content: "Metadata";
+    /*content: "Page Liminaire"; en Français*/
+    /*content: "Portada"; en Español*/
+    /*content: "Materia prima"; in Italiano*/
+    /*content: "Vorderseite"; auf Deutsch*/
+}
+```
+
+
 #### Formatting > Quote Block
 
 To change the formatting of the quote block to get better style.
